@@ -1,0 +1,26 @@
+@media screen and (max-width: 1024px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 1.85rem;
+  }
+  .quiz__container {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  h1 {
+    font-size: 1.25rem;
+  }
+  .quiz__title > h3 {
+    font-size: 1rem;
+  }
+  .quiz__options h3 {
+    font-size: 1.15rem;
+  }
+}

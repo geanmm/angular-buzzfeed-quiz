@@ -1,0 +1,28 @@
+<div class="quiz__container">
+  <div class="quiz__title">
+    <h1>{{ title }}</h1>
+    <h3>Descubra qual você seria</h3>
+    <div class="questions__front-image">
+      <img src="../../../assets/images/wallpaper.jpg" alt="Poster Image" />
+    </div>
+  </div>
+  <div class="quiz__options" *ngIf="!finished">
+    <h3>{{ questionSelected.question }}</h3>
+    <button
+      type="button"
+      class="btn-option"
+      *ngFor="let option of questionSelected.options"
+      (click)="playerChoice(option.alias)"
+    >
+      {{ option.name }}
+    </button>
+  </div>
+  <div class="quiz__results" *ngIf="finished">
+    <h1>
+      Você tirou:
+      <span [ngClass]="finalAnswer == 'A' ? 'vilain' : 'hero'">{{
+        answerSelected
+      }}</span>
+    </h1>
+  </div>
+</div>

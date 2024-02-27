@@ -1,0 +1,19 @@
+.menu__container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-direction: row-reverse;
+  padding: 2rem;
+  gap: 1rem;
+  background-color: #fff;
+  box-shadow: 2px 5px 11px -8px rgba(0, 0, 0, 0.4);
+}
+
+.menu__container > svg {
+  height: 1.75rem;
+  fill: #ee3322;
+}
+
+.menu__container > svg:last-child {
+  height: 2rem;
+}
